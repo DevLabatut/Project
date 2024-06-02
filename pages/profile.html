@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Champions Accounts</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="dark-mode">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="#">Equipe</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#" id="theme-toggle">Modo Claro/Escuro</a></li>
+                <li><a href="profile.html">Perfil</a></li>
+                <li><a href="create-account.html">Crie uma Conta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile-section">
+            <h1>Perfil</h1>
+            <form id="profile-form">
+                <label for="name">Nome Completo:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required readonly>
+
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password">
+
+                <label for="confirm-password">Confirme a Senha:</label>
+                <input type="password" id="confirm-password" name="confirm-password">
+
+                <span id="password-error" class="error-message"></span>
+
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" required>
+
+                <label for="address">Endereço:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="neighborhood">Bairro:</label>
+                <input type="text" id="neighborhood" name="neighborhood" required>
+
+                <label for="state">Estado:</label>
+                <input type="text" id="state" name="state" required>
+
+                <label for="complement">Complemento:</label>
+                <input type="text" id="complement" name="complement">
+
+                <label for="number">Número:</label>
+                <input type="text" id="number" name="number" required>
+
+                <button type="submit">Atualizar Perfil</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Champions Accounts. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../scripts/theme-toggle.js"></script>
+    <script src="../scripts/profile.js"></script>
+</body>
+</html>
